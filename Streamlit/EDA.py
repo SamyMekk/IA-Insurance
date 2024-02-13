@@ -54,6 +54,8 @@ st.pyplot(fig2)
 # Créer le graphique
 
 
+print("done")
+
 
 # Quelques Plots pour des graphiques en EDA
 
