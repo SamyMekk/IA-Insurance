@@ -18,7 +18,7 @@ st.title("Application Streamlit pour le projet d'IA pour l'Actuariat")
 st.subheader("On va s'intéresser au dataset suivant dont on donne ci-dessous les premières lignes")
 
 
-dataset=pd.read_csv("train.csv",index_col=0)
+dataset=pd.read_csv("https://raw.githubusercontent.com/SamyMekk/IA-Insurance/master/train.csv?token=GHSAT0AAAAAACN4BSHDWIBDDVUB2AAL2MEAZOLPXLA",index_col=0)
 
 st.write(dataset)
 
