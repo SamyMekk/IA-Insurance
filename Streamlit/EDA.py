@@ -9,17 +9,21 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
+import seaborn as sns
 
 
 st.title("Application Streamlit pour le projet d'IA pour l'Actuariat")
 
 st.subheader("On va s'intéresser au dataset suivant dont on donne ci-dessous les premières lignes")
 
+@st.cache_data
+def load_data(url):
+    df=pd.read_csv(url)
+    return df
 
-dataset=pd.read_csv("https://raw.githubusercontent.com/SamyMekk/IA-Insurance/master/train.csv?token=GHSAT0AAAAAACN4BSHDWIBDDVUB2AAL2MEAZOLPXLA",index_col=0)
+dataset=load_data("https://raw.githubusercontent.com/SamyMekk/IA-Insurance/master/train.csv?token=GHSAT0AAAAAACN4BSHDWIBDDVUB2AAL2MEAZOLPXLA",index_col=0)
 
-st.write(dataset)
+st.write(dataset.head(5))
 
 st.subheader("On va s'intéresser aux différentes covariates qui pourraient intervenir dansa le calcul du montant de la prime ")
 
