@@ -6,3 +6,5 @@ scikit-learn==1.1.2
 openpyxl
 altair==4.0.0
 seaborn
+pytorch
+tqdm
