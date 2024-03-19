@@ -5,8 +5,8 @@ Ce référentiel contient le projet initutlé "Prédiction de la Réponse des Cl
 ## Fichiers
 
 - [AI_for_Actuarial_Studies___Final_Project.pdf](AI_for_Actuarial_Studies___Final_Project.pdf) : Rapport final du projet au format PDF.
-- [Benchmark_IA_Insurance.ipynb](Benchmark_IA_Insurance.ipynb) : Notebook Jupyter contenant le benchmark de différents modèles d'apprentissage automatique appliqués à l'assurance.
-- [RandomForestResponse.ipynb](RandomForestResponse.ipynb) : Notebook contenant le code de l'implémentation d'un modèle de Random Forest pour prédire la réponse des clients à la sollicitation commerciale de l'assurance.
+- [Benchmark_IA_Insurance.ipynb](Benchmark_IA_Insurance.ipynb) : Notebook contenant l'implémentation des modèles Random Forest, FCN  XGBoost pour prédire la réponse des clients à la sollicitation commerciale de l'assurance.
+- [RandomForestResponse.ipynb](RandomForestResponse.ipynb) : Notebook contenant le code de l'implémentation d'un modèle de Random Forest pour prédire la réponse des clients à la sollicitation commerciale de l'assurance. Une "Grid Search" sur les hyper-paramètres du modèle y est implémentée (met du temps à s'éxecuter).
 - [test.csv](test.csv) : Jeu de données de test au format CSV.
 - [train.csv](train.csv) : Jeu de données d'entraînement au format CSV.
 - [requirements.txt](requirements.txt) : Fichier de packages Python requis pour exécuter les notebooks.
